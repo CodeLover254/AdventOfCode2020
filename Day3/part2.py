@@ -5,7 +5,7 @@ with open('data.txt', 'r') as inp:
 slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 
 
-# we need to define a function to do the math for us
+# we need to define a function to do the math for us. not a must but I feel it's cleaner
 def get_trees(right_by, down_by):
     trees = 0
     right = right_by
