@@ -1,4 +1,4 @@
-with open('ex.txt', 'r') as inp:
+with open('data.txt', 'r') as inp:
     rows = inp.readlines()
 
 # we need to move 3 right 1 down up o the bottom most row
