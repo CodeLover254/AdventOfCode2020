@@ -1,4 +1,4 @@
-with open('ex.txt', 'r') as inp:
+with open('data.txt', 'r') as inp:
     rows = inp.readlines()
 
 # slopes in the format right,down
@@ -9,7 +9,7 @@ slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 def get_trees(right_by, down_by):
     trees = 0
     right = right_by
-    for i in range(1, len(rows), down_by):  # . Our downward movement is already taken care of using step
+    for i in range(down_by, len(rows), down_by):  # . Our downward movement is already taken care of using step
         if rows[i][right] == "#":
             # aaah we found a tree!
             trees += 1
